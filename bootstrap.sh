@@ -66,6 +66,7 @@ cd ..
 git clone https://github.com/feroult/like-demo.git
 (cd like-demo && mvn clean install)
 
+
 # Adjust permissions
 chown -R vagrant:vagrant .bash_profile
 chown -R vagrant:vagrant opt
