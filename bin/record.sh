@@ -15,5 +15,4 @@ mkdir ~/.perf-work
 
 (cd ~/.perf-work && sudo perf record -F 99 -a -g -- sleep $TIME &)
 sleep 3
-(cd ~/opt/perf-map-agent/out && java -cp attach-main.jar:$JAVA_HOME/lib/tools.jar net.virtualvoid.perf.AttachOnce $PID)
-sudo chown root /tmp/perf-*.map
+attach.sh $PID
